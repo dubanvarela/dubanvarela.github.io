@@ -40,8 +40,7 @@
 	.contenedor{
 		background-color: #EEFDFF;
 		box-shadow: 10px 12px 5px #ABEBC6;
-		width: 500px;
-		height:400px;
+		width: auto;
 		padding: 30px;
 		position: absolute;
 		left: 50%;
@@ -49,20 +48,25 @@
 		transform: translate(-50%,-50%);
 
 	}
-	
+	.botones{
+text-align: right;
+
+	}
 </style>
-	  <script src="https://www.google.com/recaptcha/api.js"></script>
-	
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-<form id="demo-form" method="post" action="#">
+<form>
 	<div class="contenedor">
 	<input type="text" name="nombre" placeholder="Duban Varela">
 	<input type="text" name="Nombre de usuario" placeholder="davarela">
 	<input type="text" name="correo" placeholder="ej. ejemplo@dominio.com">
-	
-	<div class="g-recaptcha" data-sitekey="6Ld6x_8UAAAAAD-PMOyxoYvtDmQlr2d0V1-QLLRh"></div>
-	
+	<div class="botones">
+	<input type="reset" name="resetear" value="reset">
+		      <div class="g-recaptcha" data-sitekey="6Ldjyv8UAAAAADE3vAFpSJY6ZyZ_RMQbHirjeNDF"></div>
+
+	<input type="submit" name="enviar" value="Enviar">
+	</div>
 	</div>
 
 </form>
