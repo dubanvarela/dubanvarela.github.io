@@ -1,17 +1,71 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>buttons </title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="keywords" content="palabras,clave,">
-	<meta name="description" content="descripcion sobre el sitio web.">
+<head lang="esp">
+	<meta charset="utf-8">
+	<title>Uso de reCaptcha</title>
+<style type="text/css">
+	body{background-color: black;}
+	input[type="text"]{
+
+		width: 100px
+		height:32px;
+		display: block;
+		margin-bottom: 10px;
+		font-size: 18px;
+		border: silver;
+		transition: background-color 0.4s;
+	}
+	input[type="text"]:focus{
+		background-color: #EAEDED;
+	}
+	input{
+
+		font-size: 15px;
+	}
+		input[type="submit"],[type="reset"]{
+			font-weight: bold;
+			background-color: #F1C40F;
+			color: white;
+			border: none;
+			width: 55px;
+			height: 25px;
+
+		}
+
+		input[type="submit"]:hover,[type="reset"]:hover{
+			width: 60px;
+			height: 30px;
+		}
+
+	.contenedor{
+		background-color: #EEFDFF;
+		box-shadow: 10px 12px 5px #ABEBC6;
+		width: auto;
+		padding: 30px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+
+	}
+	.botones{
+text-align: right;
+
+	}
+</style>
 </head>
 <body>
-<div class="container">
-	<button class="btn btn1">hover me</button>	
-	<button class="btn btn2">hover me</button>
-	<button class="btn btn3">hover me</button>
-	<button class="btn btn4">hover me</button>
-</div>
+<form>
+	<div class="contenedor">
+	<input type="text" name="nombre" placeholder="Duban Varela">
+	<input type="text" name="Nombre de usuario" placeholder="davarela">
+	<input type="text" name="correo" placeholder="ej. ejemplo@dominio.com">
+	<div class="botones">
+	<input type="reset" name="resetear" value="reset">
+	<input type="submit" name="enviar" value="Enviar">
+	</div>
+	</div>
+
+</form>
 </body>
 </html>
