@@ -53,16 +53,23 @@ text-align: right;
 
 	}
 </style>
+	 <script src="https://www.google.com/recaptcha/api.js"></script>
+	<script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 </head>
 <body>
-<form>
+<form id="demo-form">
 	<div class="contenedor">
 	<input type="text" name="nombre" placeholder="Duban Varela">
 	<input type="text" name="Nombre de usuario" placeholder="davarela">
 	<input type="text" name="correo" placeholder="ej. ejemplo@dominio.com">
 	<div class="botones">
 	<input type="reset" name="resetear" value="reset">
-	<input type="submit" name="enviar" value="Enviar">
+	<input type="submit" name="enviar" value="Enviar" data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit>
 	</div>
 	</div>
 
