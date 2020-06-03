@@ -53,12 +53,8 @@ text-align: right;
 
 	}
 </style>
-	 <script src="https://www.google.com/recaptcha/api.js"></script>
-	<script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
+	  <script src="https://www.google.com/recaptcha/api.js"></script>
+	
 </head>
 <body>
 <form id="demo-form">
@@ -68,7 +64,10 @@ text-align: right;
 	<input type="text" name="correo" placeholder="ej. ejemplo@dominio.com">
 	<div class="botones">
 	<input type="reset" name="resetear" value="reset">
-	<input type="submit" name="enviar" value="Enviar">
+	<button class="g-recaptcha" 
+        data-sitekey="reCAPTCHA_site_key" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
 	</div>
 	</div>
 
